@@ -6,7 +6,7 @@ export const config: Knex.Config = {
   connection: {
     filename: env.DATABASE_URL,
   },
-  useNullAsDefault: true, // Importante para evitar erros com campos nulos no SQLite
+  useNullAsDefault: true,
   migrations: {
     extension: 'ts',
     directory: './db/migrations',
